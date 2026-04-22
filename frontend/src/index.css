@@ -1,0 +1,194 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+/* ===== BODY BACKGROUND ===== */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5f6df5, #7c3aed);
+}
+
+/* ===== AUTH PAGES (LOGIN / REGISTER) ===== */
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 380px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
+
+.container:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+/* ===== BUTTONS ===== */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+/* ===== LINK TEXT ===== */
+.link {
+  text-align: center;
+  margin-top: 15px;
+  color: #6366f1;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ===== DASHBOARD WRAPPER ===== */
+.dashboard-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+/* ===== DASHBOARD CARD ===== */
+.dashboard {
+  width: 100%;
+  max-width: 550px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* ===== TASK INPUT ROW ===== */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  margin: 0;
+}
+
+.task-input button {
+  width: 100px;
+  margin: 0;
+}
+
+/* ===== TASK LIST ===== */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== TASK CARD ===== */
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 12px 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.task-card:hover {
+  background: #eef2ff;
+}
+
+/* ===== TASK TEXT ===== */
+.task-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* ===== COMPLETED TASK ===== */
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* ===== ACTION BUTTON GROUP ===== */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* ===== SMALL BUTTONS ===== */
+.actions button {
+  width: auto;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+/* ===== BUTTON COLORS ===== */
+.toggle {
+  background: #10b981;
+}
+
+.toggle:hover {
+  background: #059669;
+}
+
+.edit {
+  background: #3b82f6;
+}
+
+.edit:hover {
+  background: #2563eb;
+}
+
+.delete {
+  background: #ef4444;
+}
+
+.delete:hover {
+  background: #dc2626;
+}
